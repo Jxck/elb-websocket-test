@@ -19,7 +19,7 @@ app.configure(function() {
 io.sockets.on('connection', function(socket) {
   console.log('connect via', socket.transport);
   socket.on('msg send', function(msg) {
-    socket.json.emit('msg push', msg + ' from ' + process.pid);
+    socket..emit('msg push', msg + ' from ' + process.pid);
   });
 });
 

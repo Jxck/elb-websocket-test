@@ -11,7 +11,7 @@ socket.on('connect', function() {
   });
 
   socket.on('disconnect', function(){
-    dispay('connect');
+    dispay('disconnect');
   });
 });
 
