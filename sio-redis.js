@@ -16,13 +16,13 @@ app.configure(function() {
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
-var redis-host = 'ec2-54-248-6-157.ap-northeast-1.compute.amazonaws.com'
-  , redis-port = 6379;
+var redis_host = 'ec2-54-248-6-157.ap-northeast-1.compute.amazonaws.com'
+  , redis_port = 6379;
 io.configure(function() {
   io.set('store', new SocketRedisStore({
-    redisPub: redis.createClient(redis-port, redis-host),
-    redisSub: redis.createClient(redis-port, redis-host),
-    redisClient: redis.createClient(redis-port, redis-host)
+    redisPub: redis.createClient(redis_port, redis_host),
+    redisSub: redis.createClient(redis_port, redis_host),
+    redisClient: redis.createClient(redis_port, redis_host)
   });
 });
 
