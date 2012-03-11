@@ -23,7 +23,7 @@ io.configure(function() {
     redisPub: redis.createClient(redis_port, redis_host),
     redisSub: redis.createClient(redis_port, redis_host),
     redisClient: redis.createClient(redis_port, redis_host)
-  }));
+  });
 });
 
 io.sockets.on('connection', function(socket) {
