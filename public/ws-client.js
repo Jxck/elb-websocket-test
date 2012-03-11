@@ -1,5 +1,8 @@
 // Client
-var ws = new WebSocket('ws://localhost:4000');
+var host = location.host.split(':')[0]
+  , port = 4000
+  ;
+var ws = new WebSocket('ws://' + host + ':' + port);
 function dispay(message) {
   document.getElementById('console').innerText += message + '\n';
 };
