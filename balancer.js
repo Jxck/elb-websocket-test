@@ -3,9 +3,9 @@ var http = require('http')
   ;
 
 var addresses = [
-    { host: 'localhost', port: 3000 }
-  , { host: 'localhost', port: 3001 }
-  , { host: 'localhost', port: 3002 }
+  , { host: 'ec2-176-34-15-95.ap-northeast-1.compute.amazonaws.com', port: 3000 }
+  , { host: 'ec2-54-248-1-8.ap-northeast-1.compute.amazonaws.com', port: 3000 }
+  , { host: 'ec2-176-34-16-173.ap-northeast-1.compute.amazonaws.com', port: 3000 }
 ];
 
 function getTarget(index) {
